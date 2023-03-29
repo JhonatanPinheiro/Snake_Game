@@ -1,0 +1,54 @@
+
+.style-effect-div{
+    background: no-repeat;
+    background-image: linear-gradient(rgb(0, 179, 255), rgb(13, 14, 12) );
+    height: 8px;
+}
+
+.style-img-snake:hover{
+    background: rgb(70, 230, 118);
+    transition: all calc(0.1s * 20) ease-in-out;
+    cursor: pointer;
+    
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+.btn {
+    margin: auto;
+    align-items: center;
+}
+
+
+/*--------------- Style Anchor link -------------------- */
+.button-ancora-doe-criptomoedas {
+    list-style: none;
+    font-style: none;
+    text-decoration: none;
+}
+
+.button-ancora-play-game {
+    list-style: none;
+    font-style: none;
+    text-decoration: none;
+}
+
+.button-ancora-tutorial {
+    list-style: none;
+    font-style: none;
+    text-decoration: none;
+}
+
+
+
+
+
