@@ -1,5 +1,16 @@
 const audio = new Audio();
 
-audio.src = "../music/soundtracksnake.mp3"
 
-audio.play()
+function playSoundtrack() {
+
+    audio.src = "../music/soundtracksnake.mp3"
+
+    audio.play()
+
+}
+
+function pauseSoundtrack() {
+
+    audio.pause()
+
+}

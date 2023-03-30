@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style-main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style-teste.css">
+
 </head>
 
 <body class="id-body-index">
@@ -35,21 +38,53 @@
                 <button type="button" class="btn btn-lg btn-block btn-danger button-tutorial"> <a
                         class="badge button-ancora-tutorial" href="play-game.html">Tutorial</a> </button>
             </div>
-            <div class="mb-2 mt-1 d-flex justify-content">
-                <button type="button" class="btn btn-lg btn-block btn-dark button-tutorial"> <a
-                        class="badge button-ancora-tutorial" href="play-game.html">
-                        <img src="image/volume-xmark-solid.svg"></a>
-                </button>
 
-                <button type="button" class="btn btn-lg btn-block btn-dark "> <a
-                        class="badge button-ancora-tutorial" href="play-game.html">
-                        <img src="image/volume-xmark-solid.svg"></a>
-                </button>
-
+            <div class="mt-4 text-center">
+                <div class="m-2 d-inline">
+                    <button class="button-no-soundtrack">
+                        <img onclick="pauseSoundtrack()" class="img-no-soundtrack" src="image/volume-xmark-solid.svg">
+                    </button>
+                </div>
+                <div class="m-2 d-inline">
+                    <button class="button-soundtrack">
+                        <img onclick="playSoundtrack()" class="img-soundtrack" src="image/volume-high-solid.svg">
+                    </button>
+                    </a>
+                </div>
             </div>
+
 
         </div>
     </div><!-- /container -->
+
+    <footer class="fixed-bottom bg-footer pt-3 pb-2">
+
+        <div class="container justify-center text-center mb-2 text-white">
+            <span class="d-block">Copyright © 2023 - Jhonatan Pinheiro</span>
+            <span>
+                <strong class="text-light">Todos os direitos reservados</strong>
+            </span>
+            <div>
+                <div class="d-inline">
+                    <span>
+                        <a href="https://github.com/JhonatanPinheiro" target="_blank">
+                            <img class="img-github" alt="Github" src="image/github.svg">
+                        </a>
+                    </span>
+                </div>
+
+                <span class="m-1">|</span>
+
+                <div class="d-inline">
+                    <span>
+                        <a href="https://www.linkedin.com/in/jhonatan-pinheiro-96674316b/" target="_blank">
+                            <img class="img-linkedin" alt="Linkedin" src="image/linkedin.svg">
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 

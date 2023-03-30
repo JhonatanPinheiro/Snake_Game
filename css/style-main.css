@@ -48,7 +48,74 @@
     text-decoration: none;
 }
 
+/* Style button-soundtrack */
+.button-soundtrack{
+    width: 4.1%;
+    border-style: none;
+    background: #FFF;
+ 
+}
+
+.button-no-soundtrack{
+    width: 4%;
+    border-style: none;
+    background: #FFF;
+}
+
+/* Style img soundtrack and no-soundtrack */
+.img-soundtrack{
+    width: 100%;
+    border: 2px none rgb(84, 102, 204);
+    border-radius: 40%;
+    padding: 2px;
+}
+
+.img-no-soundtrack{
+    width: 100%;
+    border: 2px none rgb(84, 102, 204);
+    border-radius: 40%;
+    padding: 1px;
+}
 
 
+/* Style img soundtrack and no-soundtrack in Hover */
+
+.img-soundtrack:hover{
+    width: 100%;
+    border: 4px inset rgb(77, 96, 202);
+    border-radius: 40%;
+    padding: 2px;
+    background-color: rgba(145, 142, 142, 0.247);
+}
+
+.img-no-soundtrack:hover{
+    width: 100%;
+    border: 2px solid rgb(121, 121, 121);
+    border-radius: 40%;
+    padding: 1px;
+    background-color: rgba(145, 142, 142, 0.623);
+}
+
+/* Style img Github and Linkedin */
+.img-linkedin{
+    width: 20px;
+}
+
+.img-github{
+    width: 20px;
+}
 
 
+.img-linkedin:hover{
+   width: 17px;
+}
+
+.img-github:hover{
+    width: 17px;
+}
+
+
+/* Style background my footer */
+.bg-footer{
+    background-image: linear-gradient(rgb(0, 179, 255), rgb(13, 14, 12) );
+}
