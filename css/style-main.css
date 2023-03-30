@@ -81,7 +81,7 @@
 /* Style img soundtrack and no-soundtrack in Hover */
 
 .img-soundtrack:hover{
-    width: 100%;
+    width: 30px;
     border: 4px inset rgb(77, 96, 202);
     border-radius: 40%;
     padding: 2px;
@@ -89,7 +89,7 @@
 }
 
 .img-no-soundtrack:hover{
-    width: 100%;
+    width: 29px;
     border: 2px solid rgb(121, 121, 121);
     border-radius: 40%;
     padding: 1px;
