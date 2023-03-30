@@ -64,14 +64,14 @@
 
 /* Style img soundtrack and no-soundtrack */
 .img-soundtrack{
-    width: 100%;
+    width: 30px;
     border: 2px none rgb(84, 102, 204);
     border-radius: 40%;
     padding: 2px;
 }
 
 .img-no-soundtrack{
-    width: 100%;
+    width: 29px;
     border: 2px none rgb(84, 102, 204);
     border-radius: 40%;
     padding: 1px;
