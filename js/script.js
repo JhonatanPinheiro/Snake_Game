@@ -20,13 +20,13 @@ function criarBG(){
 
 function criarCobrinha (){
     for(i = 0; i < snake.length; i++){
-        context.fillStyle = "#E7DDC0";
+        context.fillStyle = "#FFF";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
 function drawFood (){
-    context.fillStyle = "#DADAE3";
+    context.fillStyle = "blue";
     context.fillRect(food.x, food.y, box, box);
 }
 
