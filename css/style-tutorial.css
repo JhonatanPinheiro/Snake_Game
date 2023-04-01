@@ -1,7 +1,4 @@
-body{
-
-}
-
+/* Style of Image Snake */
 
 .profile-img-card {
     width: 96px;
@@ -10,6 +7,31 @@ body{
     display: block;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    border-radius: 50%;
+    border-radius: 22%;
 }
 
+button a{
+    text-decoration: none;
+    color: rgb(19, 77, 202);
+    font-weight: bold;
+}
+
+.style-img-snake {
+    background: rgba(0, 231, 77, 0.884);
+    border: 4px inset rgba(0, 0, 0, 0.726);
+    cursor: pointer;
+}
+
+
+.bg-footer{
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0) );
+}
+
+.bor-b {
+    border: 1px solid blue;
+}
+
+
+.bor-r {
+    border: 1px solid red;
+}
