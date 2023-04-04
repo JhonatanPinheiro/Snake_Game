@@ -8,3 +8,87 @@ body{
     background-color:rgb(255, 255, 255);
     color: rgb(10, 10, 10);
 }
+
+/* Style optionm color button */
+
+#button-blue-snake{
+    background: blue;
+    color: #FFF;
+    border: 2px outset blue;
+}
+
+#button-green-snake{
+    background: green;
+    color: #FFF;
+    border: 2px outset green;
+}
+
+#button-yellow-snake{
+    background: yellow;
+    color: #FFF;
+    border: 2px outset yellow;
+}
+
+#button-red-snake{
+    background: red;
+    color: #FFF;
+    border: 2px outset red;
+}
+
+#button-white-snake{
+    background: #FFF;
+    color: #000;
+    border: 2px outset #000;
+
+}
+
+#button-purple-snake{
+    background: purple;
+    color: #FFF;
+    border: 2px outset purple;
+}
+
+#button-pink-snake{
+    background: pink;
+    color: #FFF;
+    border: 2px outset pink;
+}
+
+
+
+/* Style Temas */
+
+#trade-classic-tema{
+    background: olive;
+    color: #ffffff;
+
+}
+
+
+#trade-dark-tema{
+    background: #000;
+    color: #FFF;
+    border: 2px ouset #000;
+}
+
+#trade-land-tema{
+    background: #2b1818;
+    color: #FFF;
+    border: 2px ouset #000;
+}
+
+/*
+#trade-animation-tema{
+    background: blue ;
+    color: #070707;
+    border: 2px ouset #000;
+}
+*/
+
+/* Style ancor */
+ a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(2, 2, 2, 0.904);
+}
+
