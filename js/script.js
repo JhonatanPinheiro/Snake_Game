@@ -63,12 +63,6 @@ function buttonPurpleSnake(){
          snake_color = purple_snake.value;
 }
 
-function buttonPinkSnake(){
-
-    var pink_snake = document.querySelector("#button-pink-snake");
-  
-         snake_color = pink_snake.value;
-}
 
 let score = 0; // Contador de peças (Score do Jogador)
 
