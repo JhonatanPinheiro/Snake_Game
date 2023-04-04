@@ -4,13 +4,27 @@ let box = 32;
 let snake = []; //criar cobrinha como lista, já que ela vai ser uma série de coordenadas, que quando pintadas, criam os quadradinhos
 snake[0] ={
     x: 8 * box,
-    y: 8 * box
-}
+    y: 8 * box,
+};
+
 let direction = "right";
+
 let food ={
     x: Math.floor(Math.random() * 15 + 1) * box,
-    y: Math.floor(Math.random() * 15 + 1) * box
+    y: Math.floor(Math.random() * 15 + 1) * box,
+};
+
+const foodImg = new Image();
+foodImg.src = '../image/food-apple.png';
+
+function drawScore(){
+    context.fillStyle = '#FFF';
+    context.font = '2rem Arial';
+    context.fillText(snake.length, 2 * box, 1.6 * box);
 }
+
+let score = 0; // Contador de peças (Score do Jogador)
+
 
 function criarBG(){
     
@@ -20,14 +34,17 @@ function criarBG(){
 
 function criarCobrinha (){
     for(i = 0; i < snake.length; i++){
-        context.fillStyle = "#FFF";
+        context.fillStyle = 'rgba(30, 236, 75, 0.836)';
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
+
+
 function drawFood (){
-    context.fillStyle = "blue";
-    context.fillRect(food.x, food.y, box, box);
+    // fillStyle = "blue";
+    // context.fillRect(food.x, food.y, box, box);
+    context.drawImage(foodImg,food.x,food.y,box,box);
 }
 
 //quando um evento acontece, detecta e chama uma função
@@ -51,12 +68,14 @@ function iniciarJogo(){
         if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
             clearInterval(jogo);
             alert('Game Over :(');
+
         }
     }
 
     criarBG();
     criarCobrinha();
     drawFood();
+    drawScore();
 
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
