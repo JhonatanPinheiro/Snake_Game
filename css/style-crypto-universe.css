@@ -1,0 +1,12 @@
+.img-bitcoin {
+    width: 24px;
+}
+
+.img-ethereum {
+    width: 16px;
+}
+
+.img-litecoin {
+    width: 17px;
+    border-radius: 50px;
+}
