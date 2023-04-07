@@ -1,0 +1,36 @@
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 22%;
+}
+
+button a{
+    text-decoration: none;
+    color: rgba(27, 197, 64, 0.904);
+    font-weight: bold;
+}
+
+.style-img-snake {
+    background: rgba(0, 231, 77, 0.884);
+    border: 4px inset rgba(0, 0, 0, 0.726);
+    cursor: pointer;
+}
+
+
+.bg-footer{
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0) );
+}
+
+.bor-b {
+    border: 1px solid blue;
+}
+
+
+.bor-r {
+    border: 1px solid red;
+}

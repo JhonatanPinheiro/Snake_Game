@@ -1,73 +1,128 @@
-body{
+body {
     height: 95vh;
     width: 95vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     color: rgb(10, 10, 10);
 }
 
-/* Style optionm color button */
+.style-effect-div{
+    background: no-repeat;
+    background-image: linear-gradient(rgba(138, 136, 136, 0.836), rgb(13, 15, 12) );
+    height: 10px;
+    margin-bottom: 2px;
+}
 
-#button-blue-snake{
+/*Style*/
+
+.btn-easy-game,
+.btn-average-game,
+.btn-hard-game,
+.btn-expert-game {
+    color: rgb(253, 253, 253);
+    background: rgb(99, 99, 99);
+    border: 4px double #fdfafa;
+    width: 64px;
+    height: 30px;
+    font-size: 12px;
+}
+
+
+.btn-easy-game:hover,
+.btn-average-game:hover,
+.btn-hard-game:hover,
+.btn-expert-game:hover {
+    color: rgb(7, 7, 7);
+    background: rgb(99, 99, 99);
+    border: 4px groove #fdfafa;
+}
+
+
+
+
+
+
+
+
+/* Style option color button */
+
+#button-blue-snake {
     background: blue;
     color: #FFF;
     border: 2px outset blue;
 }
 
-#button-green-snake{
+#button-green-snake {
     background: green;
     color: #FFF;
     border: 2px outset green;
 }
 
-#button-yellow-snake{
+#button-yellow-snake {
     background: yellow;
     color: #FFF;
     border: 2px outset yellow;
 }
 
-#button-red-snake{
+#button-red-snake {
     background: red;
     color: #FFF;
     border: 2px outset red;
 }
 
-#button-white-snake{
+#button-white-snake {
     background: #FFF;
     color: #000;
     border: 2px outset #000;
 
 }
 
-#button-purple-snake{
+#button-purple-snake {
     background: purple;
     color: #FFF;
     border: 2px outset purple;
 }
 
-/* Style Temas */
-
-#trade-classic-tema{
-    background: olive;
-    color: #ffffff;
-
+#button-blue-snake:hover,
+#button-green-snake:hover,
+#button-yellow-snake:hover,
+#button-red-snake:hover,
+#button-white-snake:hover,
+#button-purple-snake:hover{
+    border: 1px outset #ffffff;
 }
 
 
-#trade-dark-tema{
+/* Style Temas */
+#trade-classic-tema {
+    background: olive;
+    color: #ffffff;
+    border: 2px outset olive;
+
+}
+
+#trade-dark-tema {
     background: #000;
     color: #FFF;
     border: 2px ouset #000;
 }
 
-#trade-land-tema{
+#trade-land-tema {
     background: #2b1818;
     color: #FFF;
-    border: 2px ouset #000;
+    border: 2px ouset #2b1818;
 }
+
+#trade-classic-tema:hover,
+#trade-dark-tema:hover,
+#trade-land-tema:hover{
+    border: 1px outset #ffffff;
+
+}
+
 
 /*
 #trade-animation-tema{
@@ -77,10 +132,10 @@ body{
 }
 */
 
+
 /* Style ancor */
- a:hover {
+a:hover {
     text-decoration: none;
     font-weight: bold;
     color: rgba(2, 2, 2, 0.904);
 }
-

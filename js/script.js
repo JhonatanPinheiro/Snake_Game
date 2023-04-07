@@ -2,9 +2,10 @@ let canvas = document.getElementById("snake"); //criar elemento que irá rodar o
 let context = canvas.getContext("2d"); //....
 let box = 33;
 let snake = []; //criar cobrinha como lista, já que ela vai ser uma série de coordenadas, que quando pintadas, criam os quadradinhos
+// Onde a snake começa no início do jogo
 snake[0] = {
-    x: 8 * box,
-    y: 8 * box,
+    x: 8 * box, // Eixo X
+    y: 8 * box, // Eixo Y
 };
 
 let direction = "right";
@@ -20,47 +21,47 @@ foodImg.src = '../image/food-apple.png';
 
 let snake_color = '';
 
-function buttonBlueSnake(){
+function buttonBlueSnake() {
 
-       var blue_snake = document.querySelector("#button-blue-snake");
-     
-            snake_color = blue_snake.value;
+    var blue_snake = document.querySelector("#button-blue-snake");
+
+    snake_color = blue_snake.value;
 }
 
-function buttonGreenSnake(){
+function buttonGreenSnake() {
 
     var green_snake = document.querySelector("#button-green-snake");
-  
-         snake_color = green_snake.value;
+
+    snake_color = green_snake.value;
 }
 
-function buttonYellowSnake(){
+function buttonYellowSnake() {
 
     var yellow_snake = document.querySelector("#button-yellow-snake");
-  
-         snake_color = yellow_snake.value;
+
+    snake_color = yellow_snake.value;
 }
 
 
-function buttonRedSnake(){
+function buttonRedSnake() {
 
     var red_snake = document.querySelector("#button-red-snake");
-  
-         snake_color = red_snake.value;
+
+    snake_color = red_snake.value;
 }
 
-function buttonWhiteSnake(){
+function buttonWhiteSnake() {
 
     var white_snake = document.querySelector("#button-white-snake");
-  
-         snake_color = white_snake.value;
+
+    snake_color = white_snake.value;
 }
 
-function buttonPurpleSnake(){
+function buttonPurpleSnake() {
 
     var purple_snake = document.querySelector("#button-purple-snake");
-  
-         snake_color = purple_snake.value;
+
+    snake_color = purple_snake.value;
 }
 
 
@@ -77,14 +78,14 @@ function drawScore() {
 
 let tema_color = "";
 
-function tradeClassicTema(){
+function tradeClassicTema() {
     var classic_tema = document.querySelector("#trade-classic-tema");
 
     tema_color = classic_tema.value;
 
 }
 
-function tradeDarkTema(){
+function tradeDarkTema() {
     var dark_tema = document.querySelector("#trade-dark-tema");
 
 
@@ -93,17 +94,13 @@ function tradeDarkTema(){
 }
 
 
-function tradeLandTema(){
+function tradeLandTema() {
     var land_tema = document.querySelector("#trade-land-tema");
 
 
     tema_color = land_tema.value;
 
 }
-
-
-
-
 
 /*
 function tradeAnimationTema(){
@@ -116,7 +113,7 @@ function tradeAnimationTema(){
 function criarBG() {
     context.fillStyle = 'black'
     context.fillStyle = tema_color;
-    context.fillRect(0, 0, 16 * box, 16 * box); //desenha o retângulo usando x e y e a largura e altura setadas
+    context.fillRect(0, 0, 16 * box, 16 * box); //Desenha o retângulo usando x e y e a largura e altura setadas
 }
 
 function criarCobrinha() {
@@ -189,4 +186,129 @@ function iniciarJogo() {
     snake.unshift(newHead); //método unshift adiciona como primeiro quadradinho da cobrinha
 }
 
-let jogo = setInterval(iniciarJogo, 100);
+
+/*Criando níveis de dificuldades no jogo*/
+
+let speed_snake = 0;
+let qtd_onclick = 0;
+
+function easyGameSpeed() {
+
+    if (qtd_onclick === 0) {
+
+        var easy_speed = document.querySelector("#easy-game-speed").value;
+        speed_snake = easy_speed;
+
+
+        if ((tema_color != null) && (snake_color != null)) {
+
+            playNow();
+
+            // console.log(easyGameSpeed);
+            // console.log(easy_speed);
+            // console.log(speed_snake);
+            // console.log(qtd_onclick);
+
+        }
+
+
+        // console.log(easyGameSpeed);
+        // console.log(easy_speed);
+        // console.log(speed_snake);
+        // console.log(qtd_onclick);
+
+        qtd_onclick++;
+
+    }
+
+}
+
+
+function averageGameSpeed() {
+
+    if (qtd_onclick === 0) {
+
+        var average_speed = document.querySelector("#average-game-speed").value;
+        speed_snake = average_speed;
+
+        if ((tema_color != null) && (snake_color != null)) {
+
+            playNow();
+
+            // console.log(easyGameSpeed);
+            // console.log(easy_speed);
+            // console.log(speed_snake);
+            // console.log(qtd_onclick);
+        }
+
+        // console.log(easyGameSpeed);
+        // console.log(easy_speed);
+        // console.log(speed_snake);
+        // console.log(qtd_onclick);
+
+        qtd_onclick++;
+    }
+}
+
+function hardGameSpeed() {
+    if (qtd_onclick === 0) {
+
+        var hard_speed = document.querySelector("#hard-game-speed").value;
+        speed_snake = hard_speed;
+
+        if ((tema_color != null) && (snake_color != null)) {
+
+            playNow();
+
+            // console.log(easyGameSpeed);
+            // console.log(easy_speed);
+            // console.log(speed_snake);
+            // console.log(qtd_onclick);
+        }
+
+        // console.log(easyGameSpeed);
+        // console.log(easy_speed);
+        // console.log(speed_snake);
+        // console.log(qtd_onclick);
+
+        qtd_onclick++;
+
+    }
+}
+
+function expertGameSpeed() {
+    if (qtd_onclick === 0) {
+
+        var expert_speed = document.querySelector("#expert-game-speed").value;
+        speed_snake = expert_speed;
+
+        if ((tema_color != null) && (snake_color != null)) {
+
+            playNow();
+
+            // console.log(easyGameSpeed);
+            // console.log(easy_speed);
+            // console.log(speed_snake);
+            // console.log(qtd_onclick);
+        }
+
+        // console.log(easyGameSpeed);
+        // console.log(easy_speed);
+        // console.log(speed_snake);
+        // console.log(qtd_onclick);
+
+        qtd_onclick++;
+
+    }
+}
+
+/*
+let jogo = setInterval(iniciarJogo, speed_snake);
+console.log(speed_snake +'Esse');
+*/
+
+
+
+function playNow() {
+    let jogo = setInterval(iniciarJogo, speed_snake);
+}
